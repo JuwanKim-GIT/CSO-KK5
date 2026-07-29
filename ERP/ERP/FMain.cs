@@ -15,6 +15,7 @@ using System.Reflection;
 using System.Data.Linq.Mapping;
 using System.Xml.Linq;
 
+
 namespace ERP
 {
     public partial class FMain : Form
