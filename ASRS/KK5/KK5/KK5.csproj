@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0B650B7-CE5A-416E-8EA2-66BE9E1AAF8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KK5</RootNamespace>
+    <AssemblyName>KK5</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\kk5d\kk5d\pub\asrs\64\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>261</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>KK5.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7ECD73B58B0EF31983B2423AD3D17EA598597B29</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KK5_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CompLib">
+      <HintPath>dlls\CompLib.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="msdatasrc">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Spire.Common, Version=1.2.643.6041, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Spire.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.6.41, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=3.9.64.6041, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=7.12.0.6041, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Dynamic" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\DatagridviewSum.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\DVSort.cs" />
+    <Compile Include="Class\Common.cs" />
+    <Compile Include="Class\Config.cs" />
+    <Compile Include="Class\EventLog.cs" />
+    <Compile Include="Class\Extension.cs" />
+    <Compile Include="Class\IniFile.cs" />
+    <Compile Include="Class\QueryToDataTable.cs" />
+    <Compile Include="Class\SQLHandler.cs" />
+    <Compile Include="Class\uCommon.cs" />
+    <Compile Include="Class\utils.cs" />
+    <Compile Include="DB.cs">
+      <DependentUpon>DB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBMngr.cs" />
+    <Compile Include="Forms\inpt\FrmAdvMiplti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmAdvMiplti.Designer.cs">
+      <DependentUpon>FrmAdvMiplti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMastSel_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMastSel_p.Designer.cs">
+      <DependentUpon>FrmMastSel_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmPrintToExcel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmPrintToExcel3.designer.cs">
+      <DependentUpon>FrmPrintToExcel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FLoadCarRemark_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FLoadCarRemark_p.Designer.cs">
+      <DependentUpon>FLoadCarRemark_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmTaCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmTaCar.Designer.cs">
+      <DependentUpon>FrmTaCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmItemLstk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmItemLstk.Designer.cs">
+      <DependentUpon>FrmItemLstk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmOstnSel_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmOstnSel_p.Designer.cs">
+      <DependentUpon>FrmOstnSel_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmRemark_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmRemark_p.Designer.cs">
+      <DependentUpon>FrmRemark_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\Frmuse_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\Frmuse_p.Designer.cs">
+      <DependentUpon>Frmuse_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\Itemsum\FrmItemSum1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\Itemsum\FrmItemSum1.Designer.cs">
+      <DependentUpon>FrmItemSum1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\location\FrmLstkmgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\location\FrmLstkmgr.Designer.cs">
+      <DependentUpon>FrmLstkmgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\location\Frmlstkuse_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\location\Frmlstkuse_p.Designer.cs">
+      <DependentUpon>Frmlstkuse_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\location\FrmLstkType_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\location\FrmLstkType_p.Designer.cs">
+      <DependentUpon>FrmLstkType_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\location\FrmLstkInsertYard_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\location\FrmLstkInsertYard_p.Designer.cs">
+      <DependentUpon>FrmLstkInsertYard_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\Itemsum\FrmItemSum2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\Itemsum\FrmItemSum2.Designer.cs">
+      <DependentUpon>FrmItemSum2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\location\FrmLstkCelinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\location\FrmLstkCelinfo.Designer.cs">
+      <DependentUpon>FrmLstkCelinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\FrmLabelprn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\FrmLabelprn.Designer.cs">
+      <DependentUpon>FrmLabelprn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\FrmBarError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\FrmBarError.Designer.cs">
+      <DependentUpon>FrmBarError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMicust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMicust.Designer.cs">
+      <DependentUpon>FrmMicust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\Frmhiinpe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\Frmhiinpe.Designer.cs">
+      <DependentUpon>Frmhiinpe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmInptF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmInptF.Designer.cs">
+      <DependentUpon>FrmInptF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmInptY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmInptY.Designer.cs">
+      <DependentUpon>FrmInptY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmAllorSelect_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmAllorSelect_p.Designer.cs">
+      <DependentUpon>FrmAllorSelect_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadCnclQty_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadCnclQty_p.Designer.cs">
+      <DependentUpon>FrmLoadCnclQty_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmLinkTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmLinkTable.Designer.cs">
+      <DependentUpon>FrmLinkTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmBankDisp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmBankDisp.Designer.cs">
+      <DependentUpon>FrmBankDisp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\change\Frmhichng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\change\Frmhichng.Designer.cs">
+      <DependentUpon>Frmhichng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmHiodi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmHiodi.Designer.cs">
+      <DependentUpon>FrmHiodi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmHiwmtx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmHiwmtx.Designer.cs">
+      <DependentUpon>FrmHiwmtx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadcarAdd_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadcarAdd_p.Designer.cs">
+      <DependentUpon>FrmLoadcarAdd_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmChangeCarLoad_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmChangeCarLoad_p.Designer.cs">
+      <DependentUpon>FrmChangeCarLoad_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadCancel_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadCancel_p.Designer.cs">
+      <DependentUpon>FrmLoadCancel_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadCarCmmt_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadCarCmmt_p.Designer.cs">
+      <DependentUpon>FrmLoadCarCmmt_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadHistory1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadHistory1.Designer.cs">
+      <DependentUpon>FrmLoadHistory1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadHistory2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmLoadHistory2.Designer.cs">
+      <DependentUpon>FrmLoadHistory2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\FrmAddUser_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\FrmAddUser_p.Designer.cs">
+      <DependentUpon>FrmAddUser_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\FrmLoginEdit_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\FrmLoginEdit_p.Designer.cs">
+      <DependentUpon>FrmLoginEdit_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmCheck_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmCheck_p.Designer.cs">
+      <DependentUpon>FrmCheck_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmChangeDuedate_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmChangeDuedate_p.Designer.cs">
+      <DependentUpon>FrmChangeDuedate_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeType_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeType_p.Designer.cs">
+      <DependentUpon>FrmChangeType_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeQty_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeQty_p.Designer.cs">
+      <DependentUpon>FrmChangeQty_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeLoc_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeLoc_p.Designer.cs">
+      <DependentUpon>FrmChangeLoc_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeLot_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeLot_p.Designer.cs">
+      <DependentUpon>FrmChangeLot_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeProd_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeProd_p.Designer.cs">
+      <DependentUpon>FrmChangeProd_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeStatus_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmChangeStatus_p.Designer.cs">
+      <DependentUpon>FrmChangeStatus_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmDePLT_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmDePLT_p.Designer.cs">
+      <DependentUpon>FrmDePLT_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmEtcRsrvOpt_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmEtcRsrvOpt_p.Designer.cs">
+      <DependentUpon>FrmEtcRsrvOpt_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcWmto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcWmto.Designer.cs">
+      <DependentUpon>FrmEtcWmto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcLoadComment_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcLoadComment_p.Designer.cs">
+      <DependentUpon>FrmEtcLoadComment_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcNewCarSel_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcNewCarSel_p.Designer.cs">
+      <DependentUpon>FrmEtcNewCarSel_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcSelLoadCar_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcSelLoadCar_p.Designer.cs">
+      <DependentUpon>FrmEtcSelLoadCar_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcLoadCarAdd_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcLoadCarAdd_p.Designer.cs">
+      <DependentUpon>FrmEtcLoadCarAdd_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcLoadHistory1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcLoadHistory1.Designer.cs">
+      <DependentUpon>FrmEtcLoadHistory1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcLoadHistory2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmEtcLoadHistory2.Designer.cs">
+      <DependentUpon>FrmEtcLoadHistory2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmMyMoveSel_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmMyMoveSel_p.Designer.cs">
+      <DependentUpon>FrmMyMoveSel_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMidest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMidest.Designer.cs">
+      <DependentUpon>FrmMidest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMiarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMiarea.Designer.cs">
+      <DependentUpon>FrmMiarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMimast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMimast.Designer.cs">
+      <DependentUpon>FrmMimast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMimast_add_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMimast_add_p.Designer.cs">
+      <DependentUpon>FrmMimast_add_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMimast_edit_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmMimast_edit_p.Designer.cs">
+      <DependentUpon>FrmMimast_edit_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmTacarInsert_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmTacarInsert_p.Designer.cs">
+      <DependentUpon>FrmTacarInsert_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmTacarEdit_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmTacarEdit_p.Designer.cs">
+      <DependentUpon>FrmTacarEdit_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmMiinpe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmMiinpe.Designer.cs">
+      <DependentUpon>FrmMiinpe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmPltzYF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmPltzYF.Designer.cs">
+      <DependentUpon>FrmPltzYF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmPltiMoveToYloc_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmPltiMoveToYloc_p.Designer.cs">
+      <DependentUpon>FrmPltiMoveToYloc_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmMakePltz_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmMakePltz_p.Designer.cs">
+      <DependentUpon>FrmMakePltz_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmPltiMove_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmPltiMove_p.Designer.cs">
+      <DependentUpon>FrmPltiMove_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmPltzAll_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\inpt\FrmPltzAll_p.Designer.cs">
+      <DependentUpon>FrmPltzAll_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmStackErorr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmStackErorr.Designer.cs">
+      <DependentUpon>FrmStackErorr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRcpJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRcpJob.Designer.cs">
+      <DependentUpon>FrmRcpJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRcpRsrvLstk_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRcpRsrvLstk_p.Designer.cs">
+      <DependentUpon>FrmRcpRsrvLstk_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRcpOstnWrite_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRcpOstnWrite_p.Designer.cs">
+      <DependentUpon>FrmRcpOstnWrite_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRcpIstnWrite_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRcpIstnWrite_p.Designer.cs">
+      <DependentUpon>FrmRcpIstnWrite_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\change\FrmMichng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\change\FrmMichng.Designer.cs">
+      <DependentUpon>FrmMichng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmMiordi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmMiordi.Designer.cs">
+      <DependentUpon>FrmMiordi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmMiwmtx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmMiwmtx.Designer.cs">
+      <DependentUpon>FrmMiwmtx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmTaordi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmTaordi.Designer.cs">
+      <DependentUpon>FrmTaordi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmRsrvOption_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\oupt\FrmRsrvOption_p.Designer.cs">
+      <DependentUpon>FrmRsrvOption_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmNewCarSel_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmNewCarSel_p.Designer.cs">
+      <DependentUpon>FrmNewCarSel_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmSelLoadCar_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmSelLoadCar_p.Designer.cs">
+      <DependentUpon>FrmSelLoadCar_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FromLoadCarGetQty_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FromLoadCarGetQty_p.Designer.cs">
+      <DependentUpon>FromLoadCarGetQty_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmTaordiLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmTaordiLoad.Designer.cs">
+      <DependentUpon>FrmTaordiLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\FrmMimvht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\FrmMimvht.Designer.cs">
+      <DependentUpon>FrmMimvht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\FrmMiuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\FrmMiuser.Designer.cs">
+      <DependentUpon>FrmMiuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\FrmMiuserEdit_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\FrmMiuserEdit_p.Designer.cs">
+      <DependentUpon>FrmMiuserEdit_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmTaordiRemark_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmTaordiRemark_p.Designer.cs">
+      <DependentUpon>FrmTaordiRemark_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmPrintToExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmPrintToExcel.Designer.cs">
+      <DependentUpon>FrmPrintToExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\FrmMijchg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\FrmMijchg.Designer.cs">
+      <DependentUpon>FrmMijchg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmPrintToExcel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sangcha\FrmPrintToExcel2.Designer.cs">
+      <DependentUpon>FrmPrintToExcel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmPKSZ_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Query\ItemLstks\FrmPKSZ_p.Designer.cs">
+      <DependentUpon>FrmPKSZ_p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmTawmtoLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SangchaEtc\FrmTawmtoLoad.Designer.cs">
+      <DependentUpon>FrmTawmtoLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <None Include="DB.dbml.layout">
+      <DependentUpon>DB.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Forms\inpt\FrmAdvMiplti.resx">
+      <DependentUpon>FrmAdvMiplti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmMastSel_p.resx">
+      <DependentUpon>FrmMastSel_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\oupt\FrmEtcRsrvOpt_p.resx">
+      <DependentUpon>FrmEtcRsrvOpt_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SangchaEtc\FrmPrintToExcel3.resx">
+      <DependentUpon>FrmPrintToExcel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FLoadCarRemark_p.resx">
+      <DependentUpon>FLoadCarRemark_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmMimast_edit_p.resx">
+      <DependentUpon>FrmMimast_edit_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmTaCar.resx">
+      <DependentUpon>FrmTaCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\location\FrmLstkCelinfo.resx">
+      <DependentUpon>FrmLstkCelinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmItemLstk.resx">
+      <DependentUpon>FrmItemLstk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmOstnSel_p.resx">
+      <DependentUpon>FrmOstnSel_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmRemark_p.resx">
+      <DependentUpon>FrmRemark_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\Frmuse_p.resx">
+      <DependentUpon>Frmuse_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\Itemsum\FrmItemSum1.resx">
+      <DependentUpon>FrmItemSum1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\location\FrmLstkmgr.resx">
+      <DependentUpon>FrmLstkmgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\location\FrmLstkType_p.resx">
+      <DependentUpon>FrmLstkType_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\location\Frmlstkuse_p.resx">
+      <DependentUpon>Frmlstkuse_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\location\FrmLstkInsertYard_p.resx">
+      <DependentUpon>FrmLstkInsertYard_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\Itemsum\FrmItemSum2.resx">
+      <DependentUpon>FrmItemSum2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\FrmLabelprn.resx">
+      <DependentUpon>FrmLabelprn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\FrmBarError.resx">
+      <DependentUpon>FrmBarError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmMicust.resx">
+      <DependentUpon>FrmMicust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\Frmhiinpe.resx">
+      <DependentUpon>Frmhiinpe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\FrmInptF.resx">
+      <DependentUpon>FrmInptF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\FrmInptY.resx">
+      <DependentUpon>FrmInptY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmAllorSelect_p.resx">
+      <DependentUpon>FrmAllorSelect_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmLoadcarAdd_p.resx">
+      <DependentUpon>FrmLoadcarAdd_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmLoadCnclQty_p.resx">
+      <DependentUpon>FrmLoadCnclQty_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmPrintToExcel.resx">
+      <DependentUpon>FrmPrintToExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmLinkTable.resx">
+      <DependentUpon>FrmLinkTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmRcpIstnWrite_p.resx">
+      <DependentUpon>FrmRcpIstnWrite_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmBankDisp.resx">
+      <DependentUpon>FrmBankDisp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\change\FrmhiChng.resx">
+      <DependentUpon>Frmhichng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\oupt\FrmHiodi.resx">
+      <DependentUpon>FrmHiodi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\oupt\FrmHiwmtx.resx">
+      <DependentUpon>FrmHiwmtx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmChangeCarLoad_p.resx">
+      <DependentUpon>FrmChangeCarLoad_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmLoadCancel_p.resx">
+      <DependentUpon>FrmLoadCancel_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmLoadCarCmmt_p.resx">
+      <DependentUpon>FrmLoadCarCmmt_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmLoadHistory1.resx">
+      <DependentUpon>FrmLoadHistory1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmLoadHistory2.resx">
+      <DependentUpon>FrmLoadHistory2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\FrmAddUser_p.resx">
+      <DependentUpon>FrmAddUser_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\FrmLoginEdit_p.resx">
+      <DependentUpon>FrmLoginEdit_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmCheck_p.resx">
+      <DependentUpon>FrmCheck_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmChangeDuedate_p.resx">
+      <DependentUpon>FrmChangeDuedate_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmChangeType_p.resx">
+      <DependentUpon>FrmChangeType_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmChangeQty_p.resx">
+      <DependentUpon>FrmChangeQty_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmChangeLoc_p.resx">
+      <DependentUpon>FrmChangeLoc_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmChangeLot_p.resx">
+      <DependentUpon>FrmChangeLot_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmChangeProd_p.resx">
+      <DependentUpon>FrmChangeProd_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmChangeStatus_p.resx">
+      <DependentUpon>FrmChangeStatus_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\FrmDePLT_p.resx">
+      <DependentUpon>FrmDePLT_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SangchaEtc\FrmEtcWmto.resx">
+      <DependentUpon>FrmEtcWmto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SangchaEtc\FrmEtcLoadComment_p.resx">
+      <DependentUpon>FrmEtcLoadComment_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SangchaEtc\FrmEtcNewCarSel_p.resx">
+      <DependentUpon>FrmEtcNewCarSel_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SangchaEtc\FrmEtcSelLoadCar_p.resx">
+      <DependentUpon>FrmEtcSelLoadCar_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SangchaEtc\FrmEtcLoadCarAdd_p.resx">
+      <DependentUpon>FrmEtcLoadCarAdd_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SangchaEtc\FrmEtcLoadHistory1.resx">
+      <DependentUpon>FrmEtcLoadHistory1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SangchaEtc\FrmEtcLoadHistory2.resx">
+      <DependentUpon>FrmEtcLoadHistory2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmMyMoveSel_p.resx">
+      <DependentUpon>FrmMyMoveSel_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmMidest.resx">
+      <DependentUpon>FrmMidest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmMiarea.resx">
+      <DependentUpon>FrmMiarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmMimast.resx">
+      <DependentUpon>FrmMimast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmMimast_add_p.resx">
+      <DependentUpon>FrmMimast_add_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmTacarInsert_p.resx">
+      <DependentUpon>FrmTacarInsert_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmTacarEdit_p.resx">
+      <DependentUpon>FrmTacarEdit_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\FrmMiinpe.resx">
+      <DependentUpon>FrmMiinpe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\FrmPltzYF.resx">
+      <DependentUpon>FrmPltzYF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\FrmPltiMoveToYloc_p.resx">
+      <DependentUpon>FrmPltiMoveToYloc_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\FrmMakePltz_p.resx">
+      <DependentUpon>FrmMakePltz_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\FrmPltiMove_p.resx">
+      <DependentUpon>FrmPltiMove_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\inpt\FrmPltzAll_p.resx">
+      <DependentUpon>FrmPltzAll_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmStackErorr.resx">
+      <DependentUpon>FrmStackErorr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmRcpJob.resx">
+      <DependentUpon>FrmRcpJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmRcpRsrvLstk_p.resx">
+      <DependentUpon>FrmRcpRsrvLstk_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmRcpOstnWrite_p.resx">
+      <DependentUpon>FrmRcpOstnWrite_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\change\FrmMichng.resx">
+      <DependentUpon>FrmMichng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\oupt\FrmMiordi.resx">
+      <DependentUpon>FrmMiordi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\oupt\FrmMiwmtx.resx">
+      <DependentUpon>FrmMiwmtx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmTaordi.resx">
+      <DependentUpon>FrmTaordi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\oupt\FrmRsrvOption_p.resx">
+      <DependentUpon>FrmRsrvOption_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmNewCarSel_p.resx">
+      <DependentUpon>FrmNewCarSel_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmSelLoadCar_p.resx">
+      <DependentUpon>FrmSelLoadCar_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FromLoadCarGetQty_p.resx">
+      <DependentUpon>FromLoadCarGetQty_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmTaordiLoad.resx">
+      <DependentUpon>FrmTaordiLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\FrmMimvht.resx">
+      <DependentUpon>FrmMimvht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\FrmMiuser.resx">
+      <DependentUpon>FrmMiuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\FrmMiuserEdit_p.resx">
+      <DependentUpon>FrmMiuserEdit_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmTaordiRemark_p.resx">
+      <DependentUpon>FrmTaordiRemark_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\FrmMijchg.resx">
+      <DependentUpon>FrmMijchg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sangcha\FrmPrintToExcel2.resx">
+      <DependentUpon>FrmPrintToExcel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Query\ItemLstks\FrmPKSZ_p.resx">
+      <DependentUpon>FrmPKSZ_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SangchaEtc\FrmTawmtoLoad.resx">
+      <DependentUpon>FrmTawmtoLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="printopt.ini" />
+    <None Include="KK5_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="sample.xlsx" />
+    <Content Include="sample2.xlsx" />
+    <Content Include="sampleetc.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMCTL32_2_20482.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ch1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ch2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ch3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ch4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ch5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ch6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bank.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\emptyout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\use.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\plt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHELL32_1_1002.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WININET_138.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ERP\ERP\ERP5.csproj">
+      <Project>{a363848c-0d4f-4008-82fc-7535eb15c9b9}</Project>
+      <Name>ERP5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MCP\MCP.csproj">
+      <Project>{d1e70e16-5cb9-419c-9f26-4165eeceb988}</Project>
+      <Name>MCP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RCP\RCP\RCP.csproj">
+      <Project>{04f65c84-e24d-442b-8c60-7383e09a54a7}</Project>
+      <Name>RCP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

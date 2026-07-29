@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <DB>
+    <Con>Data Source=10.63.44.6;Initial Catalog=IPK_RCP;Persist Security Info=True;User ID=aw_sa;Password=moNey=918+;Connection Timeout=5;</Con>
+    <LocalCon>Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=IPK_RCP;Integrated Security=True;TrustServerCertificate=True;</LocalCon>
+  </DB>
+  <ACCESS>
+    <USER>1</USER>
+  </ACCESS>
+</root>

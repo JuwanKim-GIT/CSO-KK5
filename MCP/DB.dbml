@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="KK5D" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=10.63.41.212;Initial Catalog=KK5D;User ID=sa;Password=kk1dadmin12" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbscrc" Member="tbscrcs">
+    <Type Name="tbscrc">
+      <Column Name="scrc_no" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="scrc_mode" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="scrc_gubn" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_io" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_onln" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_pwron" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_emer" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_stat" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="scrc_palt" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_posi" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="scrc_eror" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_ecod" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="scrc_stop" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_iuse" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_ouse" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_lstk" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="scrc_pltn" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="scrc_jno" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="scrc_indx" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="scrc_fstn" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="scrc_tstn" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="scrc_xmov" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_mesg" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="scrc_chdt" Type="System.String" DbType="VarChar(44)" CanBeNull="true" />
+      <Column Name="scrc_comm" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="scrc_rset" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbcnvc" Member="tbcnvcs">
+    <Type Name="tbcnvc">
+      <Column Name="cnvc_mode" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cnvc_ch01" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="cnvc_ch02" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="cnvc_ch03" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="cnvc_ch04" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="cnvc_ch05" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="cnvc_ch06" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="cnvc_op_onof" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="cnvc_op_eror" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="cnvc_job_no" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="cnvc_jobno" Type="System.String" DbType="VarChar(188)" CanBeNull="true" />
+      <Column Name="cnvc_buf_palt" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cnvc_ist_redy" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="cnvc_ist_palt" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="cnvc_ost_redy" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="cnvc_ost_palt" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="cnvc_21_rqst" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="cnvc_22_rqst" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="cnvc_remote" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="cnvc_stop" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="cnvc_comm" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="cnvc_24_rqst" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbstat" Member="tbstats">
+    <Type Name="tbstat">
+      <Column Name="stat_key" Type="System.String" DbType="VarChar(1) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="stat_imode" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="stat_ipath" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="stat_barm" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="stat_dplt" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="stat_lr" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="stat_out" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="stat_auto_load" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="stat_resp_load" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tibarc" Member="tibarcs">
+    <Type Name="tibarc">
+      <Column Name="barc_key" Type="System.String" DbType="VarChar(1) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="barc_pltno" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="barc_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="barc_msg" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="barc_flag" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="cvc_msg" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cvc_flag" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbindx" Member="tbindxes">
+    <Type Name="tbindx">
+      <Column Name="indx_jno" Type="System.String" DbType="VarChar(18) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="indx_indx" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="indx_gubn" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="indx_jio" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="indx_hogi" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="indx_fstn" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="indx_tstn" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="indx_pltn" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="indx_lstk" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="indx_xmov" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="indx_edat" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="indx_sflg" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="indx_uflg" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.miplti" Member="mipltis">
+    <Type Name="miplti">
+      <Column Name="plti_pltno" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="plti_lstk" Type="System.String" DbType="VarChar(7) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="plti_prod" Type="System.String" DbType="VarChar(18) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="plti_pdesc" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="plti_oprod" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="plti_loc" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="plti_lot" Type="System.String" DbType="VarChar(18) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="plti_bestq" Type="System.String" DbType="VarChar(1) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="plti_pksz" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="plti_remark" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="plti_icust" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="plti_stok" Type="System.Decimal" DbType="Decimal(8,0)" CanBeNull="true" />
+      <Column Name="plti_rqty" Type="System.Decimal" DbType="Decimal(8,0)" CanBeNull="true" />
+      <Column Name="plti_cycl_date" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="plti_idate" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="plti_itime" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="plti_flag" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="plti_label" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.milstk" Member="milstks">
+    <Type Name="milstk">
+      <Column Name="lstk_no" Type="System.String" DbType="VarChar(7) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="lstk_bk" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="lstk_by" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="lstk_lv" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="lstk_hogi" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="lstk_use" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="lstk_srch" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="lstk_flag" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="lstk_io" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="lstk_stat" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="lstk_type" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.p_get_indx_jno" Method="p_get_indx_jno">
+    <Parameter Name="ac" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="rstr" Type="System.String" DbType="VarChar(18)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_curgetdatetime19" Method="p_curgetdatetime19">
+    <Parameter Name="dtstr" Type="System.String" DbType="VarChar(19)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_curgetdatetime14" Method="p_curgetdatetime14">
+    <Parameter Name="dtstr" Type="System.String" DbType="VarChar(14)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_curgetdatetime10" Method="p_curgetdatetime10">
+    <Parameter Name="dtstr" Type="System.String" DbType="VarChar(10)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

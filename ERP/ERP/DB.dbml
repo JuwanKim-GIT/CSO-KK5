@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IPK_RCP" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=CSON01;Initial Catalog=IPK_RCP;Persist Security Info=True;User ID=aw_sa;Password=&quot;moNey=918+&quot;;Encrypt=False;TrustServerCertificate=True" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.mimast" Member="mimasts">
+    <Type Name="mimast">
+      <Column Name="mast_cd" Type="System.String" DbType="VarChar(18) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="mast_desc" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="mast_type" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="mast_grp" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="mast_old" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="mast_bunit" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="mast_szdm" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="mast_gwgt" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="mast_nwgt" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="mast_wunit" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="mast_vol" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="mast_vunit" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="mast_date" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="mast_time" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="mast_flag" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="mast_desc1" Type="System.String" DbType="VarChar(24)" CanBeNull="true" />
+      <Column Name="mast_canqty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.miordi" Member="miordis">
+    <Type Name="miordi">
+      <Column Name="docnum" Type="System.String" DbType="VarChar(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="credat" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="cretim" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="sdno" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="route" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="routedesc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="deltyp" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="deltypdesc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="cust" Type="System.String" DbType="VarChar(17)" CanBeNull="true" />
+      <Column Name="cust_name1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="cust_name2" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="street" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="post" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="tel" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="contry" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="region" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="wecust" Type="System.String" DbType="VarChar(17)" CanBeNull="true" />
+      <Column Name="wecust_name1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="wecust_name2" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="westreet" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="wepost" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="wecity" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="wetel" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="wecontry" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="weregion" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="duedate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="cmmt" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="rmrk" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="parcel" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="posnr" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="matnr" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="matnrdesc" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="lgort" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="charg" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="plant" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="qty" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="gwgt" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="nwgt" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="wunit" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="vol" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="vunit" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="pstyv" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="pstyvdesc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="sono" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="soposnr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sodate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="custpo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="custpodate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="rqty" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="fqty" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="flag" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="arrival" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="car_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="car_step" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="car_sno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="print_step" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ordi_seq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ordi_check" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="bachadate" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ordi_ltqty" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="ordi_size" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="recv_dt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="hdate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="htime" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="vgbel" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="vsbed" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="ablad" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.taordi" Member="taordis">
+    <Type Name="taordi">
+      <Column Name="docnum" Type="System.String" DbType="VarChar(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="credat" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="cretim" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="sdno" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="route" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="routedesc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="deltyp" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="deltypdesc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="cust" Type="System.String" DbType="VarChar(17)" CanBeNull="true" />
+      <Column Name="cust_name1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="cust_name2" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="street" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="post" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="tel" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="contry" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="region" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="wecust" Type="System.String" DbType="VarChar(17)" CanBeNull="true" />
+      <Column Name="wecust_name1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="wecust_name2" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="westreet" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="wepost" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="wecity" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="wetel" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="wecontry" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="weregion" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="duedate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="cmmt" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="rmrk" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="parcel" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="posnr" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="matnr" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="matnrdesc" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="lgort" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="charg" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="plant" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="qty" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="gwgt" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="nwgt" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="wunit" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="vol" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="vunit" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="pstyv" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="pstyvdesc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="sono" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="soposnr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sodate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="custpo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="custpodate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="rqty" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="fqty" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="flag" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="arrival" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="car_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="car_step" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="car_sno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="print_step" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ordi_seq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ordi_check" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="bachadate" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ordi_ltqty" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+      <Column Name="ordi_size" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="recv_dt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="hdate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="htime" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="vgbel" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="vsbed" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="ablad" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.miwmto" Member="miwmtos">
+    <Type Name="miwmto">
+      <Column Name="docnum" Type="System.String" DbType="VarChar(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="credat" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="cretim" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="lgnum" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="tanum" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="bwlvs" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="trart" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="bname" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="tapos" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="matnr" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="plant" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="charg" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="bestq" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="sobkz" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="lsonr" Type="System.String" DbType="VarChar(24)" CanBeNull="true" />
+      <Column Name="meins" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="wdatu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="wenum" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="vltyp" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="vsolm" Type="System.Decimal" DbType="Decimal(13,0)" CanBeNull="true" />
+      <Column Name="nltyp" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="maktx" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="vfdat" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="lgort" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="io" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="rqty" Type="System.Decimal" DbType="Decimal(13,0)" CanBeNull="true" />
+      <Column Name="fqty" Type="System.Decimal" DbType="Decimal(13,0)" CanBeNull="true" />
+      <Column Name="flag" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="hdate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="htime" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="pksz" Type="System.Decimal" DbType="Decimal(13,3)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.p_changeloc" Method="p_changeloc">
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="ploc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_changelot" Method="p_changelot">
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="plot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_changeprod" Method="p_changeprod">
+    <Parameter Name="pprod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_changeqty" Method="p_changeqty">
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_changeStatus" Method="p_changeStatus">
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="nbestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_creoldcode" Method="p_creoldcode">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_curgetdatetime10" Method="p_curgetdatetime10">
+    <Parameter Name="dtstr" Type="System.String" DbType="VarChar(10)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_curgetdatetime14" Method="p_curgetdatetime14">
+    <Parameter Name="dtstr" Type="System.String" DbType="VarChar(14)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_curgetdatetime19" Method="p_curgetdatetime19">
+    <Parameter Name="dtstr" Type="System.String" DbType="VarChar(19)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_deplt" Method="p_deplt">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_deplt_n" Method="p_deplt_n">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_etc_cnfm" Method="p_etc_cnfm">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_etc_cnfm_cancel" Method="p_etc_cnfm_cancel">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="wmtxkey" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="maktx" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="qty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pksz" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="idate" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="itime" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="oprod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="remark" Type="System.String" DbType="VarChar(40)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_etc_exec_spec" Method="p_etc_exec_spec">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="bwlvs" Type="System.String" DbType="VarChar(3)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="qty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pksz" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="idate" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="itime" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="oprod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="remark" Type="System.String" DbType="VarChar(40)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_etc_out_exec" Method="p_etc_out_exec">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_etc_rsrv_cancel" Method="p_etc_rsrv_cancel">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="wmtxkey" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="oqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_etc_rsrv_uline" Method="p_etc_rsrv_uline">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_etc_rsrv_uline2" Method="p_etc_rsrv_uline2">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="oqty" Type="System.Decimal" DbType="Decimal(18,0)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_fixpksz" Method="p_fixpksz">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_get_hogi" Method="p_get_hogi">
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="hogi" Type="System.String" DbType="VarChar(1)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_get_indx_jno" Method="p_get_indx_jno">
+    <Parameter Name="ac" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="rstr" Type="System.String" DbType="VarChar(18)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_get_rsrv_hogi" Method="p_get_rsrv_hogi">
+    <Parameter Name="atype" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="srch" Type="System.String" DbType="VarChar(6)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_get_rsrv_hogi1" Method="p_get_rsrv_hogi1">
+    <Parameter Name="atype" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="srch" Type="System.String" DbType="VarChar(6)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_get_rsrv_hogi2" Method="p_get_rsrv_hogi2">
+    <Parameter Name="atype" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="srch" Type="System.String" DbType="VarChar(6)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_get_rsrv_hogi3" Method="p_get_rsrv_hogi3">
+    <Parameter Name="ghogi3" Type="System.Int32" DbType="Int" />
+    <Parameter Name="srch" Type="System.String" DbType="VarChar(6)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_getpltno" Method="p_getpltno">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_getrand" Method="p_getrand">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_inptexec" Method="p_inptexec">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="fstn" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="fygubun" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_labelprn" Method="p_labelprn">
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="prn" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.P_miwmto_in" Method="P_miwmto_in">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.P_miwmto_in2" Method="P_miwmto_in2">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="qty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_movepltno_fy_yf" Method="p_movepltno_fy_yf">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="fstn" Type="System.String" DbType="VarChar(2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_out_cnfm_all" Method="p_out_cnfm_all">
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_out_cnfm_all_cust" Method="p_out_cnfm_all_cust">
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="cust" Type="System.String" DbType="VarChar(17)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_out_cnfm_all_date" Method="p_out_cnfm_all_date">
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_out_cnfm_all_order" Method="p_out_cnfm_all_order">
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="orderno" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_out_cnfm_cancel" Method="p_out_cnfm_cancel">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="sdno" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="posnr" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ordxkey" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="oqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pksz" Type="System.Decimal" DbType="Decimal(18,3)" />
+    <Parameter Name="remark" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="idate" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="itime" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="oprod" Type="System.String" DbType="VarChar(18)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_out_exec" Method="p_out_exec">
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_out_exec_date" Method="p_out_exec_date">
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_out_exec_date_sdno" Method="p_out_exec_date_sdno">
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="orderno" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltichng_bestq" Method="p_pltichng_bestq">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="bestq2" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="bwlvs" Type="System.String" DbType="VarChar(3)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltichng_bestq_spec" Method="p_pltichng_bestq_spec">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="bestq2" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="bwlvs" Type="System.String" DbType="VarChar(3)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltichng_bestq_spec2" Method="p_pltichng_bestq_spec2">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="bwlvs" Type="System.String" DbType="VarChar(3)" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="bestq2" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="uqty" Type="System.Decimal" DbType="Decimal(18,0)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltichng_charg" Method="p_pltichng_charg">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="charg2" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltichng_charg_spec" Method="p_pltichng_charg_spec">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="charg2" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltichng_charg_spec2" Method="p_pltichng_charg_spec2">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="bwlvs" Type="System.String" DbType="VarChar(3)" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="charg2" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="uqty" Type="System.Decimal" DbType="Decimal(18,0)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltichng_lgort" Method="p_pltichng_lgort">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="lgort2" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltichng_lgort_spec" Method="p_pltichng_lgort_spec">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="lgort2" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltichng_lgort_spec2" Method="p_pltichng_lgort_spec2">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="tanum" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="tapos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="bwlvs" Type="System.String" DbType="VarChar(3)" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="lgort2" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="cqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="uqty" Type="System.Decimal" DbType="Decimal(18,0)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltimove_fy" Method="p_pltimove_fy">
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Parameter Name="rqty" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltimove_yardtoyard" Method="p_pltimove_yardtoyard">
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="dlstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Parameter Name="rqty" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltimove_yloc" Method="p_pltimove_yloc">
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="dlstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Parameter Name="rqty" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltimoveto_yard" Method="p_pltimoveto_yard">
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="dlstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Parameter Name="rqty" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(13,3)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltzadd" Method="p_pltzadd">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="npltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="labelyn" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltzadd_n" Method="p_pltzadd_n">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="npltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="labelyn" Type="System.Int32" DbType="Int" />
+    <Parameter Name="prnno" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltzerall" Method="p_pltzerall">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="labelyn" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltzerall_n" Method="p_pltzerall_n">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="labelyn" Type="System.Int32" DbType="Int" />
+    <Parameter Name="prnno" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltznew" Method="p_pltznew">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="labelyn" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_pltznew_n" Method="p_pltznew_n">
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="loc" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="lot" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="bestq" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="stok" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="sqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="labelyn" Type="System.Int32" DbType="Int" />
+    <Parameter Name="prnno" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_reassign_cell" Method="p_reassign_cell">
+    <Parameter Name="jno" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="gubn" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="jio" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="sflg" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="prod" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="nlstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="hogi" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="tstn" Type="System.String" DbType="VarChar(2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_rsrv_cancel" Method="p_rsrv_cancel">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="sdno" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="posnr" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ordxkey" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="pltno" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="lstk" Type="System.String" DbType="VarChar(7)" />
+    <Parameter Name="oqty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_rsrv_cust" Method="p_rsrv_cust">
+    <Parameter Name="cust" Type="System.String" DbType="VarChar(17)" />
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_rsrv_doc" Method="p_rsrv_doc">
+    <Parameter Name="doc" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_rsrv_order" Method="p_rsrv_order">
+    <Parameter Name="orderno" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="credat" Type="System.String" DbType="VarChar(8)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_rsrv_upper_line" Method="p_rsrv_upper_line">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="sdno" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="posnr" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_rsrv_upper_line2" Method="p_rsrv_upper_line2">
+    <Parameter Name="docnum" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="sdno" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="posnr" Type="System.Int32" DbType="Int" />
+    <Parameter Name="matnr" Type="System.String" DbType="VarChar(18)" />
+    <Parameter Name="lgort" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="charg" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_tilock" Method="p_tilock">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.s_getbachasno" Method="s_getbachasno">
+    <Parameter Name="bdate" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.s_loadcncl_all" Method="s_loadcncl_all">
+    <Parameter Name="bachadate" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="car_no" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="seq" Type="System.Int32" DbType="Int" />
+    <Parameter Name="load_qty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.s_loadcncl_all_etc" Method="s_loadcncl_all_etc">
+    <Parameter Name="bachadate" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="car_no" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="seq" Type="System.Int32" DbType="Int" />
+    <Parameter Name="load_qty" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_inpt_cancel" Method="u_inpt_cancel">
+    <Parameter Name="gb" Type="System.Int32" DbType="Int" />
+    <Parameter Name="apltn" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_inpt_double" Method="u_inpt_double">
+    <Parameter Name="apltn" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_inpt_finish" Method="u_inpt_finish">
+    <Parameter Name="gb" Type="System.Int32" DbType="Int" />
+    <Parameter Name="apltn" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_move_cancel" Method="u_move_cancel">
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_move_finish" Method="u_move_finish">
+    <Parameter Name="apltn" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_oupt_cancel" Method="u_oupt_cancel">
+    <Parameter Name="apltn" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_oupt_empt" Method="u_oupt_empt">
+    <Parameter Name="aotype" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="apltn" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_oupt_finish" Method="u_oupt_finish">
+    <Parameter Name="apltn" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_ymove_cancel" Method="u_ymove_cancel">
+    <Parameter Name="apltn" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.u_ymove_finish" Method="u_ymove_finish">
+    <Parameter Name="apltn" Type="System.String" DbType="VarChar(8)" />
+    <Parameter Name="alstk" Type="System.String" DbType="VarChar(7)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

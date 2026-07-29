@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Class="DB2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=YSSEUNG-THINK\SQLEXPRESS;Initial Catalog=K5;User ID=sa;Password=edps1986" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.p_curgetdatetime10" Method="p_curgetdatetime10">
+    <Parameter Name="dtstr" Type="System.String" DbType="VarChar(10)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_curgetdatetime14" Method="p_curgetdatetime14">
+    <Parameter Name="dtstr" Type="System.String" DbType="VarChar(14)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_curgetdatetime19" Method="p_curgetdatetime19">
+    <Parameter Name="dtstr" Type="System.String" DbType="VarChar(19)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_get_indx_jno" Method="p_get_indx_jno">
+    <Parameter Name="ac" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="rstr" Type="System.String" DbType="VarChar(18)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

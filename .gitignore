@@ -1,0 +1,32 @@
+## Visual Studio Temp & Build Files
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+## Packages & Executables
+*.nupkg
+**/packages/
+*.exe
+*.zip
+*.dll
+
+## Publish & Deployment Folders
+**/pub/
+**/publish/
+
+## DBs folder (DBs 폴더 전체 및 하위 모든 파일 완전 제외)
+**/DBs/
+DBs/
+*.dacpac
+
+## Text & Data Files
+*.txt
+*.xml
+
+## Essential XML Exception (필수 XML 예외)
+!**/DBCon_chilseo.xml
